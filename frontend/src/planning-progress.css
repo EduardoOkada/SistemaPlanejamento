@@ -1,0 +1,72 @@
+.planning-progress {
+  color: #202821;
+  font: 400 0.95rem/1.45 "Aptos", "Segoe UI", sans-serif;
+  max-width: 42rem;
+}
+
+.planning-progress__summary {
+  align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.55rem;
+}
+
+.planning-progress__summary strong {
+  font-variant-numeric: tabular-nums;
+  font-size: 1.05rem;
+}
+
+.planning-progress__track {
+  background: #e4e9e3;
+  border-radius: 3px;
+  height: 0.55rem;
+  overflow: hidden;
+}
+
+.planning-progress__value {
+  background: #347552;
+  height: 100%;
+  transition: width 180ms ease-out;
+}
+
+.planning-progress__tasks {
+  list-style: none;
+  margin: 0.85rem 0 0;
+  padding: 0;
+}
+
+.planning-progress__task {
+  align-items: center;
+  border-bottom: 1px solid #e5e9e5;
+  display: flex;
+  gap: 0.7rem;
+  min-height: 2.8rem;
+}
+
+.planning-progress__task input {
+  accent-color: #347552;
+  height: 1rem;
+  margin: 0;
+  width: 1rem;
+}
+
+.planning-progress__task span {
+  flex: 1;
+}
+
+.planning-progress__task small {
+  color: #626c64;
+  font-variant-numeric: tabular-nums;
+}
+
+.planning-progress__error {
+  color: #a12c24;
+  margin: 0.65rem 0 0;
+  min-height: 1.4em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .planning-progress__value {
+    transition: none;
+  }
+}
